@@ -22,7 +22,9 @@ jobs:
         swift-version: 5.8
 
     - uses: actions/checkout@v3
-    - name: Build Target 1
-      run: swift build --target 
+    - name: Build spm_v50
+      run: swift build --target spm_v50
+    - name: Build spm_v50_copy
+      run: swift build --target spm_v50_copy
     - name: Run tests
       run: swift test -v
